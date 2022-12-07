@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
+
+/* .slick-slider {
+    height: 500px;
+} */
+
+
+.slick-slider {
+    height: 500px;
+}
+
+.slick-arrow {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0px -80px 0 -80px;
+    z-index: 99;
+}
+
+.slick-prev {
+    transform: rotatex(180deg) rotate(180deg) translatey(-50%);
+}
+
+.slick-arrow:hover::before {
+    color: #ffc200;
+}
+
+.slick-arrow::before {
+    font-family: "unicons";
+    content: "➜";
+    content: "\e836";
+    font-size: 100px;
+    color: black;
+}
+
+.slick-arrow::before:hover {
+    color: #ffc200;
+}

@@ -1,0 +1,70 @@
+.wrapper {
+    display: flex;
+    
+}
+
+.inner {
+    display: inline-grid;
+    grid-template-columns: 100px auto;
+    position: relative;
+    padding: 22px 0;
+}
+
+
+.inner:before {
+    content: "";
+    background: #474559;
+    width: 3px;
+    height: 100%;
+    margin-top: 22px;
+    position: absolute;
+    left: 36px;
+    z-index: -99;
+}
+
+// remove before element at last element
+.lastCard:before {
+    height: 0;
+}
+
+.year {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 75px;
+    background: #474559;
+    
+}
+
+.info {
+    display: inline-block;
+}
+
+.info h3 {
+    margin-bottom: 8px;
+    max-width: 432px; 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info small {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info p{
+    margin-bottom: 16px;
+    max-width: 432px; 
+    color: #5b5b5b;
+    font-size: 18px;
+    line-height:1.5;
+}

@@ -1,0 +1,169 @@
+.wrapper {
+    width: 100%;
+}
+
+.inner {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 1140px;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 3rem;
+    width: 400px;
+}
+
+.gg-map {
+    width: 400px;
+    height: 300px;
+    border: none;
+}
+
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #474559;
+}
+
+.contact-box-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 48px;
+    color: #ffff;
+}
+
+.contact-box-inner a {
+    width: 100%;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.contact-info-item {
+    width: 70%;
+}
+
+.contact-info-title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.contact-info-phonenumber {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.email-contact {
+    font-size: 18px;
+    transition: all ease-in-out 0.1s;
+
+    &:hover{
+        color: #ffc200;
+    }
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-icon {
+    font-size: 24px;
+}
+
+
+// right content ---------------------------------------------
+.right-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 0 15px;
+}
+
+.right-content-title {
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 37px;
+}
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+input {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 16px 0;
+    padding: 10px;
+    width: 47%;
+    max-width: 50%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060;
+    border: none;
+    border-radius: 3px;
+    outline: 1px rgb(206, 206, 206) solid;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        outline: #ffc200 1px solid !important;
+    }
+    &:focus-visible {
+        outline: #ffc200 1px solid !important;
+    }
+}
+
+.message {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 16px 0;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060;
+    border: none;
+    border-radius: 3px;
+    outline: 1px rgb(206, 206, 206) solid;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        outline: #ffc200 1px solid !important;
+    }
+    &:focus-visible {
+        outline: #ffc200 1px solid !important;
+    }
+}
+
+.send-btn {
+    font-family: 'Maven Pro', sans-serif;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 120px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 28px;
+    background: #ffc200;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: #474559;
+    }
+}

@@ -1,0 +1,24 @@
+.wrapper {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 0 15px;
+    margin: 100px auto;
+    width: 1140px;
+    gap: 0 20px;
+}
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card-item:last-child::before {
+    height: 0;
+}
+
+.title {
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 40px;
+}
