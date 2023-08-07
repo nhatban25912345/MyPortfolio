@@ -5,7 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FiMoon } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const cx = classNames.bind(styles);
 

@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./Introduce.module.scss";
-
+import avatar from "../assets/images/avatar.jpg"
 
 const cx = classNames.bind(styles);
 
@@ -26,7 +26,7 @@ function Introduce({ id }) {
                     </div>  
                 </div>
                 <div className={cx("avatar-container")}>
-                    <img className={cx("avatar")} src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/84135939_864269564008747_839758091682578432_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HlI5axrjEJkAX9_PWJR&_nc_ht=scontent.fhan2-1.fna&oh=00_AfCJiDy9yru6t7hz6KjETC_t8QysxX11kdvz8oiJL_YrbQ&oe=63A9FFD3" alt="avatar" />
+                    <img className={cx("avatar")} src={avatar} alt="avatar" />
                 </div>
             </div>    
         </div>

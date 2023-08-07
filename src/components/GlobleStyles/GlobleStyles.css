@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: black;
+    
+}
+
 body {
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
@@ -14,4 +19,4 @@ body {
 
 ol, ul {
     list-style: none;
-  }
+}

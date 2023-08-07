@@ -5,7 +5,6 @@ import Project from "./components/Project";
 import Information from "./components/Information/Information";
 import Contact from "./components/Contact";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { useRef } from "react";
 
 
 function App() {
