@@ -9,22 +9,6 @@
     font-size: 2.8rem;
 }
 
-.slick-slide > div {
-    margin: 0 10px;
-}
-.slick-list {
-    height: 1000px;
-    margin: 0 -10px;
-}
-
-.slick-arrow {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0px -80px 0 -80px;
-    z-index: 99;
-}
-
 .card {
     // width: 400px;
     border: 1px solid #fff;
@@ -64,4 +48,28 @@
     left: 0;
     right: 0;
     height: 2px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+        margin: 50px auto 50px;
+    }
+    .title {
+        margin: 0px auto 20px auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .slick-next {
+        right: 150px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        height: 300px;
+    }
+    .card-top > img {
+        height: 200px;
+    }
 }

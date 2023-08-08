@@ -26,14 +26,15 @@
 }
 
 .little-title {
-    padding: 8px 16px;
+    width: 100%;
+    padding: 16px 0;
     font-size: 14px;
     color: #5b5b5b;
     font-weight: bold;
 }
 
 .greeting {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -49,19 +50,16 @@
 .animated-info {
     display: inline-block;
     vertical-align: top;
-    min-width: 460px;
+    width: 460px;
     position: relative;
 }
 .animated-item {
     color: #2fc6b9;
-}
-.animated-item {
     line-height: inherit;
     display: block;
     opacity: 0;
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
     animation: BottomTotop 6s linear infinite 0s;
 }
@@ -102,8 +100,8 @@
 
 
 .content {
-    width: 85%;
-    margin: 50px 0 16px 0;
+    width: 100%;
+    // margin: 50px 0 16px 0;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.5;
@@ -111,7 +109,7 @@
 }
 
 .contact {
-    margin-top: 24px !important;
+    margin: 24px 0 !important;
     width: 100%;
 }
 
@@ -133,9 +131,55 @@
 .avatar-container {
     width: 40%;
     left: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .avatar {
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .wrapper {
+        padding: 1rem 0;
+    }
+    .little-title {
+        order: 1;
+    }
+    .information {
+        // flex-direction: column-reverse;
+        width: 100%;
+    }
+    .avatar-container {
+        width: 100%;
+    }
+    .avatar {
+        width: 65%;
+    }
+    .animated-info {
+        width: 400px;
+    }
+    .greeting {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    // .wrapper {
+    //     margin-top: 30px;
+    // }
+    .avatar {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 370px) {
+    .greeting {
+        font-size: 1.5rem;
+    }
 }

@@ -36,3 +36,24 @@
 .slick-arrow::before:hover {
     color: #ffc200;
 }
+
+
+@media screen and (max-width: 800px) {
+    .slick-arrow {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0px 20px 0 20px;
+        z-index: 99;
+    }
+    .slick-arrow::before {
+        font-size: 60px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slick-slider {
+        height: 300px;
+    }
+}

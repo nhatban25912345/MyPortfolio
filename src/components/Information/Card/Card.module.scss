@@ -68,3 +68,15 @@
     font-size: 18px;
     line-height:1.5;
 }
+
+@media screen and (max-width: 900px) {
+    .info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inner {
+        padding: 10px 0;
+    }
+}

@@ -46,7 +46,6 @@ function Header() {
       }
     >
       <div className={cx("inner")}>
-        <div className={cx("left-block")}>
           <div className={cx("logo-wrapper")}>
             <AiOutlineUser className={cx("logo")} />
             <span>HoangNhat</span>
@@ -73,11 +72,10 @@ function Header() {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className={cx("right-block")} >
-          <FiMoon className={cx("logo-theme-mode")}/>
-          <span className={cx("title-them-mode")}>Color mode</span>
-        </div>
+          <div className={cx("right-block")} >
+            <FiMoon className={cx("logo-theme-mode")}/>
+            <span className={cx("title-them-mode")}>Color mode</span>
+          </div>
       </div>
     </div>
   );

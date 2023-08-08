@@ -20,7 +20,7 @@
     align-items: center;
     padding: 0 15px;
     margin: 0 auto;
-    width: 1140px;
+    width: 100%;
     max-width: 1140px;
     min-height: 70px;
 }
@@ -34,7 +34,7 @@
 
 .logo-wrapper {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     // margin: 0 8px;
     height: 40px;
     font-weight: bold;
@@ -55,7 +55,6 @@
 
 
 .mid-block {
-    margin-left: 150px;
     height: 50px;
     display: flex;
     align-items: center;

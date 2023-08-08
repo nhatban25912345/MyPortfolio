@@ -32,7 +32,7 @@ function Contact({ id }) {
                     </div>
                 </div>
                 <div className={cx("right-content-wrapper")}>
-                    <h1 className={cx("right-content-title")}>Interested to work together? <br/><span>Let's talk</span></h1>
+                    <h1 className={cx("right-content-title")}>Interested to work together?<br/><span>Let's talk</span></h1>
                     <form className={cx("form-wrapper")}>
                             <input className={cx("name")} type="text" placeholder="Your name"/>
                             <input className={cx("email")} type="email" placeholder="Your email"/>

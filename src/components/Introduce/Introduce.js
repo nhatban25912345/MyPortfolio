@@ -8,8 +8,8 @@ function Introduce({ id }) {
     return (  
         <div id={id} className={cx("wrapper")}>
             <div className={cx("container")}>
+            <div className={cx("little-title")}>Welcome to my portfolio website!</div>
                 <div className={cx("information")}>
-                    <div className={cx("little-title")}>Welcome to my portfolio website!</div>
                     <h1 className={cx("greeting")}>
                         <span className={cx("default-greeting")}>Hey folks, I'm</span>
                         <div className={cx("animated-info")}>
