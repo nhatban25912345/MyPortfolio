@@ -28,7 +28,7 @@ function NavbarDesktop() {
       <div className={cx("inner")}>
         <div className={cx("logo-wrapper")}>
           <AiOutlineUser className={cx("logo")} />
-          <span>HoangNhat</span>
+          <span>Hoang Nhat</span>
         </div>
         <div className={cx("nav-toggle")} onClick={handToggleNavMobile}>
           <HiMenu className={cx("bars-icon")} />
