@@ -18,7 +18,7 @@ function App() {
       <Contact id="contact"/>
 
       <div className="footer">
-        <span>Coded by <Link onClick={()=> {scroll.scrollToTop()}}>Hoang Nhat</Link></span>
+        <span>Coded by <Link to="/" onClick={()=> {scroll.scrollToTop()}}>Hoang Nhat</Link></span>
       </div>
 
     </div>

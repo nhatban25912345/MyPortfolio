@@ -13,7 +13,7 @@ function Contact({ id }) {
                     <iframe
                         className={cx("gg-map")}  
                         title="gg-map"
-                        src={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1395.2311484529866!2d105.8772352486263!3d20.999862470565184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aeaa17c35b81%3A0x79d8becf2f06f8dc!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaW5oIGRvYW5oIHbDoCBDw7RuZyBuZ2jhu4cgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1669756233823!5m2!1svi!2s"}
+                        src={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8195485613837!2d105.87513917402666!3d20.999869388772606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aeaa17c35b81%3A0x79d8becf2f06f8dc!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaW5oIGRvYW5oIHbDoCBDw7RuZyBuZ2jhu4cgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1691624349729!5m2!1svi!2s"}
                     />
                     <div className={cx("contact-box")}>
                         <div className={cx("contact-box-inner")}>
