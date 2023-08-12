@@ -5,7 +5,6 @@ import { FiMoon } from "react-icons/fi";
 import { animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 
-import { HiMenu } from "react-icons/hi";
 import { AiOutlineUser } from "react-icons/ai";
 
 const cx = classNames.bind(styles);

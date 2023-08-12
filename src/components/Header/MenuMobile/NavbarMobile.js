@@ -14,7 +14,16 @@ function NavbarDesktop() {
   const [navMobileOpen, setNavMobileOpen] = useState(false);
   console.log("navMobileOpen: ", navMobileOpen);
   const handToggleNavMobile = () => {
+    if (navMobileOpen === false) {
+      document.getElementById("nav-menu-container").style.transform = "translateX(0)";
+    } 
+    if (navMobileOpen === true) {
+      console.log(11111);
+      document.getElementById("nav-menu-container").style.transform = "translateX(100%)";
+    }
     setNavMobileOpen(!navMobileOpen);
+    console.log(document.getElementById("nav-menu-container"));
+    
   }
 
   const scrollToTop = () => {
@@ -33,41 +42,44 @@ function NavbarDesktop() {
         <div className={cx("nav-toggle")} onClick={handToggleNavMobile}>
           <HiMenu className={cx("bars-icon")} />
         </div>
-        { navMobileOpen ? 
-          <div className={cx("nav-menu-mobile")}>
-          <ul className={cx("mid-block-mobile")}>
-            <li className={cx("nav-item-mobile")}>
-              <Link className={cx("nav-link")} to="/" smooth={true} onClick={() => { scrollToTop() }}>
-                About
-              </Link>
-            </li>
-            <li className={cx("nav-item-mobile")}>
-              <Link className={cx("nav-link")} to="project" smooth={true}>
-                Project
-              </Link>
-            </li>
-            <li className={cx("nav-item-mobile")}>
-              <Link className={cx("nav-link")} to="information" smooth={true}>
-                Information
-              </Link>
-            </li>
-            <li className={cx("nav-item-mobile")}>
-              <Link className={cx("nav-link")} to="contact" smooth={true}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className={cx("right-block-mobile")} >
-            <div className={cx("toggle-theme-btn")}>
-              <FiMoon className={cx("logo-theme-mode")} />
-              <span className={cx("title-them-mode")}>Color mode</span>
-            </div>
-            <div className={cx("nav-toggle-mobile")} onClick={handToggleNavMobile}>
-              <HiMenu className={cx("bars-icon")} />
+        {/* { navMobileOpen ? 
+        : undefined} */}
+        <div className={cx("nav-menu-container")}>
+          {navMobileOpen ? <p><div className={cx("overlay")} onClick={handToggleNavMobile}></div></p> : undefined}
+          <div id="nav-menu-container" className={cx("nav-menu-mobile")}>
+            <ul className={cx("mid-block-mobile")}>
+              <li className={cx("nav-item-mobile")}>
+                <Link className={cx("nav-link")} to="/" smooth={true} onClick={() => {scrollToTop()}}>
+                  About
+                </Link>
+              </li>
+              <li className={cx("nav-item-mobile")}>
+                <Link className={cx("nav-link")} to="project" smooth={true}>
+                  Project
+                </Link>
+              </li>
+              <li className={cx("nav-item-mobile")}>
+                <Link className={cx("nav-link")} to="information" smooth={true}>
+                  Information
+                </Link>
+              </li>
+              <li className={cx("nav-item-mobile")}>
+                <Link className={cx("nav-link")} to="contact" smooth={true}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+            <div className={cx("right-block-mobile")} >
+              <div className={cx("toggle-theme-btn")}>
+                <FiMoon className={cx("logo-theme-mode")} />
+                <span className={cx("title-them-mode")}>Color mode</span>
+              </div>
+              <div className={cx("nav-toggle-mobile")} onClick={handToggleNavMobile}>
+                <HiMenu className={cx("bars-icon")} />
+              </div>
             </div>
           </div>
         </div>
-        : undefined}
       </div>
     </div>
   );

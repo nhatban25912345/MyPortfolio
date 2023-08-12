@@ -41,15 +41,26 @@
     height: 40px;
 }
 
+.nav-toggle {
+    z-index: 1;
+}
+
 .bars-icon {
     font-size: 24px;
     cursor: pointer;
 }
 
-.nav-menu-mobile {
+.nav-menu-container {
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu-mobile {
+    transform: translateX(100%);
     width: 80%;
     background-color: #fff;
     display: flex;
@@ -58,29 +69,24 @@
     justify-content: flex-end;
     height: 100vh;
     z-index: 10;
-    transition: all 1s linear;
-
+    transition: all 0.3s linear;
 }
 
-.nav-menu-mobile::before {
+.overlay {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: 125%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-color: rgb(175, 175, 175);
     opacity: 0.3;
-    z-index: -1;
+    z-index: 1;
+    transition: all 1s linear;
 }
 
 .mid-block-mobile, .right-block-mobile {
     width: 100%;
-}
-
-.mid-block-mobile {
-    height: calc(100% - 60px);
-    background-color: #fff;
 }
 
 .right-block-mobile {
