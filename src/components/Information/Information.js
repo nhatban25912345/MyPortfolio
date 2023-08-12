@@ -2,7 +2,6 @@ import styles from "./Information.module.scss";
 import classNames from "classnames/bind";
 import Card from "./Card";
 import { experiences, educations} from "./milestone-data";
-console.log(experiences);
 
 const cx = classNames.bind(styles);
 
