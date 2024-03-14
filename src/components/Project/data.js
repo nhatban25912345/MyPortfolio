@@ -1,20 +1,22 @@
-import image1 from "../assets/images/landing-page-1.png";
-import image2 from "../assets/images/landing-page-2.png";
+import image1 from "../assets/images/Elden-ring.png";
+import image2 from "../assets/images/tiktok.png"
 
 
 export const dataDigitalBestSeller = [
   {
     id: 1,
-    title: 'Landing page',
+    title: 'Elden Ring',
     price: '',
     category: 'Landing page',
-    linkImg: image1, 
+    linkImg: image1,
+    linkDeploy: 'https://elden-ring-alpha.vercel.app',
   },
   {
     id: 2,
-    title: 'Landing page',
+    title: 'Tiktok',
     price: '',
-    category: 'Landing page',
+    category: 'Clone page',
     linkImg: image2,
+    linkDeploy: 'https://tiktok-ui-fawn.vercel.app',
   },
 ];

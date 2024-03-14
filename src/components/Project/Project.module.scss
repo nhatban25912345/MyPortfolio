@@ -11,10 +11,11 @@
 
 .card {
     // width: 400px;
-    border: 1px solid #fff;
+    // border: 1px solid #fff;
     background: black;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     height: 500px;
     color: #fff;
@@ -22,6 +23,7 @@
 }
 
 .card-top h1 {
+    width: 100%;
     font-size: 0.9rem;
     margin: 20px;
 }
@@ -31,6 +33,7 @@
     height: 380px;
     object-fit: cover;
     background: black;
+    object-position: top;
 }
 
 .card-bottom {

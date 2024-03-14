@@ -28,25 +28,8 @@ function Project({ id }) {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
           infinite: true,
           dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -62,10 +45,10 @@ function Project({ id }) {
 
   return (
     <div id={id} className={cx("wrapper")}>
-      <h1 className={cx("title")}>Things I have code</h1>
+      <h1 className={cx("title")}>My Projects</h1>
       <Slider {...settings}>
         {dataDigitalBestSeller.map((item, index) => (
-          <div className={cx("card")} key={index}>
+          <a href={`${item.linkDeploy}`} target="_blank" className={cx("card")} key={index} onClick={() => { }} rel="noreferrer">
             <div className={cx("card-top")}>
               <img
                 src={
@@ -82,7 +65,7 @@ function Project({ id }) {
               <h3>{item.price}</h3>
               <span className={cx("category")}>{item.category}</span>
             </div>
-          </div>
+          </a>
         ))}
       </Slider>
     </div>
