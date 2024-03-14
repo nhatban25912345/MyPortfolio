@@ -5,17 +5,17 @@ import image2 from "../assets/images/tiktok.png"
 export const dataDigitalBestSeller = [
   {
     id: 1,
-    title: 'Elden Ring',
+    title: 'Landing page',
     price: '',
-    category: 'Landing page',
+    category: 'Elden Ring',
     linkImg: image1,
     linkDeploy: 'https://elden-ring-alpha.vercel.app',
   },
   {
     id: 2,
-    title: 'Tiktok',
+    title: 'Clone page',
     price: '',
-    category: 'Clone page',
+    category: 'Tiktok',
     linkImg: image2,
     linkDeploy: 'https://tiktok-ui-fawn.vercel.app',
   },

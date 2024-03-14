@@ -59,7 +59,7 @@ function Project({ id }) {
                 alt={item.title}
                 onError={handleErrorImage}
               />
-              <h1>{item.title}</h1>
+              <h3>{item.title}</h3>
             </div>
             <div className={cx("card-bottom")}>
               <h3>{item.price}</h3>

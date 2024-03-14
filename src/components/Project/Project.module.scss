@@ -20,9 +20,10 @@
     height: 500px;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.card-top h1 {
+.card-top h3 {
     width: 100%;
     font-size: 0.9rem;
     margin: 20px;
@@ -42,6 +43,8 @@
 
 .category {
     position: relative;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 .category::before {
     content: '';
@@ -74,5 +77,8 @@
     }
     .card-top > img {
         height: 200px;
+    }
+    .card h3 {
+        margin: 10px 20px;
     }
 }
